@@ -1,0 +1,30 @@
+[
+{
+    "model":"bears.Bear",
+    "pk":1,
+    "fields":{
+        "bearID":222,
+        "pTT_ID":345,
+        "capture_lat":70.87402954,
+        "capture_long":-152.5647827,
+        "sex":"M",
+        "age_class":"A",
+        "ear_applied":"left",
+        "created_date":"2023-03-16 03:02:02.037738"
+    }
+},
+{
+    "model":"bears.Bear",
+    "pk":2,
+    "fields":{
+        "bearID":223,
+        "pTT_ID":346,
+        "capture_lat":70.87402955,
+        "capture_long":-152.5647829,
+        "sex":"F",
+        "age_class":"A",
+        "ear_applied":"left",
+        "created_date":"2023-03-16 03:02:02.037738"
+    }
+}
+]

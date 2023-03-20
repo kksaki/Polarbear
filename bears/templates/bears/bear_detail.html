@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <title>Individual Polar Bear Tracking</title>
+    </head><body>
+        <h1>Polar Bear Tagged for Tracking</h1>
+        <p>Bear:
+            <b>{{bear.bearID }}</b> |
+            {{bear.pTT_ID}} |
+            {{ bear.capture_lat}} |
+            {{bear.capture_long}}	|
+            {{bear.sex}} |
+            {{ bear.age_class}} |
+            {{bear.ear_applied}}
+        </p>
+
+        <p>Sightings via Radio Device</p>
+
+        {% for sex in bears %}
+
+        <b> <a href={% url 'bear_detail' id=bear.id %}>{{bear.bearID }}</a></b>
+       This is a {{ bear.age_class }} aged bear
+       {{bear.bearID}}, a <a href={% url 'females' %}>{{ bear.sex }}</a> bear, who has has an tag in its' {{ bear.ear_applied }} ear, with {{ bear.pTT_ID }} devise, and was
+       tagged at {{ bear.capture_lat }} and {{ bear.capture_long }}
+       </p>
+       {% endfor %}
+
+    </body>
+</html>
